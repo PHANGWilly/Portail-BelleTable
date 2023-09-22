@@ -1,0 +1,6 @@
+            <!--<li title="Commandes"> 
+                <a href="<?php echo $get_perma_link_admin;?>commandes.php" class="link-to">
+                    <img src="<?php echo $get_perma_link;?>/img/commandes-icon.svg" alt="" class="user-icon">
+                    Commandes
+                </a>
+            </li>-->

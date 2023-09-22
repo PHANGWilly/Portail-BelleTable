@@ -1,0 +1,47 @@
+.layer-content{
+    padding-top: 150px;
+}
+
+.title{
+    text-align: center;
+}
+
+.title h1{
+    font-size: 50px;
+}
+
+.form-content{
+    padding-top: 30px;
+    margin: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    width: 100%;
+    display: block;
+    resize: vertical;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input, textarea{
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: none;
+}
+
+input[type=submit]{
+    border: 1px solid black;
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+    background: white;
+    color: black;
+}

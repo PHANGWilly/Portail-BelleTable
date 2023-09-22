@@ -1,0 +1,19 @@
+form{
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto 100px;
+    padding: 20px 45px;
+    text-align: center;
+}
+
+textarea{
+    width: 100%;
+    resize: vertical;
+    padding : 10px;
+}
+
+input{
+    width: 100%;
+    padding : 10px;
+}

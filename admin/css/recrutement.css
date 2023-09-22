@@ -1,0 +1,62 @@
+:root{
+    --svg-link-width : 20px;
+    --svg-link-height : 20px;
+    --fs-thead-th : 20px;
+    --fs-tbody-td : 16px;
+}
+
+a img.download-icon{
+    width: var(--svg-link-width);
+    height: var(--svg-link-height);
+}
+
+.table__title{
+    padding: 10px 2.5%;
+}
+
+.table__content {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+thead tr{
+    padding: 20px 0;
+}
+
+thead th{
+    padding: var(--padding-double-trbl);
+    font-size: var(--fs-thead-th);
+    background-color: white;
+}
+
+tbody td{
+    padding: var(--padding-double-trbl);
+    font-size: var(--fs-tbody-td);
+}
+
+tbody td a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+.new__poste{
+    padding : 0 2.5%;
+}
+
+.link__to{
+    color : black;
+}

@@ -1,0 +1,14 @@
+.error {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 15px;
+    text-align: center;
+    margin: 10px 0;
+    color: red;
+}
+
+.error:before {
+    content: '\f071';
+    font-family: var(--fa-font);
+    padding-right: 10px;
+}

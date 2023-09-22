@@ -1,0 +1,100 @@
+
+table{
+    width:100%;
+    
+}
+
+thead{
+    background-color : var(--main-color);
+    border-collapse: collapse;
+}
+
+thead th{
+    padding : 10px 20px;
+    text-align:center;
+}
+
+tbody{
+    background-color : white;
+}
+
+tbody td{
+    padding : 10px 20px;
+    text-align:center;
+}
+
+.link__to{
+    text-decoration : none;
+}
+
+.link__to.delete_item{
+    color : red;
+}
+
+.link__to.delete_item:hover{
+    color : red;
+    text-decoration : underline;
+}
+
+.action span:nth-child(2){
+    padding-left : 5px;
+}
+
+.td_invisible{
+    background-color : var(--bg-body);
+}
+
+.link__to.payment{
+    border-radius : 5px;
+    color : white;
+        background-color : rgb(0,220,10);
+
+    padding : 10px 15px;
+}
+
+.link__to.payment:hover{
+    cursor : pointer;
+    background-color : rgb(0,255,0);
+}
+
+@media screen and (max-width : 1024px){
+    .content {
+        padding: 130px 2%;
+        overflow-y: auto;
+    }   
+    table{
+        width : 380px;
+        font-size : 0.658rem;
+    }
+    
+    thead th{
+        padding : 5px;
+        text-align:center;
+    }
+    
+    tbody tr td:first-child{
+        font-size : 10px;
+    }
+    
+    tbody td{
+        padding : 5px;
+        text-align:center;
+    }
+    
+    .link__to.payment{
+        border-radius : 5px;
+        padding : 5px;
+    }
+    
+    .link__to{
+        font-size : 10px;
+    }
+    
+    .action span:nth-child(2){
+        padding-left:0;
+    }
+    
+    .action span:nth-child(1){
+        display:none;
+    }
+}

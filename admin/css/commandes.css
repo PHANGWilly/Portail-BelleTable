@@ -1,0 +1,44 @@
+:root{
+    --padding-double-trbl:2px 5px;
+    --fs-thead-th : 20px;
+    --fs-tbody-td : 16px;
+    --width-etat-commande : 10px;
+    --height-etat-commande : 10px;
+}
+
+.table__content {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+thead tr{
+    padding: 20px 0;
+}
+
+thead th{
+    padding: var(--padding-double-trbl);
+    font-size: var(--fs-thead-th);
+    background-color: white;
+}
+
+tbody td{
+    padding: var(--padding-double-trbl);
+    font-size: var(--fs-tbody-td);
+}
+
+tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+td.etat-commande{
+    color: blue;
+    font-size: 30px;
+}

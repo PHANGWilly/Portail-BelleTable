@@ -1,0 +1,49 @@
+.btn{
+    padding : 10px 15px;
+    font-size : 15px;
+}
+
+.btn.modify{
+    background-color : var(--main-color);
+    border : 1px var(--secondary-color);
+}
+
+.btn.modify:hover{
+    background-color : var(--secondary-color);
+    border : 1px var(--main-color);
+    cursor:pointer;
+}
+
+.form{
+    max-width:600px;
+    font-size : 20px;
+}
+
+input{
+    font-size : 15px;
+    width : 100%;
+    padding : 10px 15px;
+}
+
+.link__to{
+    text-decoration : none;
+    color : black;
+}
+
+.link__to:hover{
+    text-decoration:underline;
+    text-decoration-offset : 5px;
+    cursor : pointer;
+}
+
+input[type="sumbit"]:hover{
+    cursor : pointer;
+}
+
+.notVisible{
+    display : none;
+}
+
+.isVisible{
+    display : block;
+}

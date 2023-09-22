@@ -1,0 +1,49 @@
+.histoire{
+    padding : 20px 0;
+    text-align : center;
+    margin : 0 auto;
+}
+
+.historique{
+        padding : 20px 0;
+    text-align : center;
+    margin : 0 auto;
+}
+
+.situation{
+    padding : 20px 0;
+    text-align : center;
+    margin : 0 auto;
+}
+
+.nous{
+    padding : 20px 0;
+    text-align : center;
+    margin : 0 auto;
+}
+
+
+@media screen and (min-width:769px){
+    .content .deux-freres{
+        width : 500px;
+        height : 285px;
+    }   
+    
+    .content .martine,
+    .content .laurence{
+        width : 200px;
+        height : 285px;
+    }
+
+}
+
+@media screen and (max-width : 768px){
+    .content .deux-freres{
+        width:100%;
+    }
+    
+    .content .martine,
+    .content .laurence{
+        width : 45%;
+    }
+}

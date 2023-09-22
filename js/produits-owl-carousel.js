@@ -1,0 +1,24 @@
+$(document).ready(function(){
+    $(".owl-carousel").OwlCarousel();
+});
+
+$('.owl-carousel').OwlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        400:{
+            items:3,
+            nav:false
+        },
+        769:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})

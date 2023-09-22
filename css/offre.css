@@ -1,0 +1,73 @@
+:root{
+    --secondary-color : #fc935f;
+    --form-f-size : 17px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: var(--form-f-size);
+}
+
+label{
+    display: block;
+}
+
+textarea{
+    width: 100%;
+    display: block;
+    resize: vertical;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input, textarea, select{
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+    font-size: var(--form-f-size);
+    outline: none;
+}
+
+input[type=submit]{
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color: white;
+    font-size: var(--form-f-size);
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+    background: var(--secondary-color);
+    color: white;
+    border: 1px solid var(--secondary-color);
+}
+
+.offre:focus{
+    background: white;
+    width: 100%;
+    outline: none;
+}
+
+.data-file{
+    display: flex;
+    align-items: baseline;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.data-file span{
+    padding: 10px 5px 10px 15px;
+}
+
+.data-file input {
+    margin-bottom: 0;
+}
+
+input[type=file]{
+    background-color: white;
+}

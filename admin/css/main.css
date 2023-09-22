@@ -1,0 +1,144 @@
+*,::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background : var(--bg-body);
+    overflow-y:auto;
+    line-height: 30px;
+    scroll-behavior: smooth;
+    cursor : default;
+}
+
+body :not(.fa-solid){
+    font-family: var(--main-font);
+}
+
+body .fa-solid{
+    font-family: var(--fa-font);
+}
+
+:root{
+    --main-font : 'Montserrat', sans-serif;
+    --fa-font : 'FontAwesome', sans-serif;
+    --drawer-gutter: 20px;
+    --colorDrawers: #ffffff;
+    --colorDrawerText: #000000;
+    --colorDrawerBorder : #e8e8e1;
+    --svg-width : 25px;
+    --svg-height : 25px;
+    --bg-body : #f1f1f1;
+    --link-color : #FAAA82;
+    --main-color : #FAAA82;
+    --colorDrawerBorder: #e8e8e1;
+        --secondary-color : #fc935f;
+}
+
+nav{
+    overflow-y: auto;
+}
+
+nav.nav{
+    height: 100%;
+    width: 45px;
+    transition-duration: 0.4s;
+    top : 0;
+    left: 0;    
+    bottom: 0;
+    background: white;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+nav.nav.nav-is-open{
+    height: 100%;
+    width: 180px;
+    top : 0;
+    left: 0;    
+    bottom: 0;
+    background: white;
+    position: fixed;
+    overflow-x: hidden;
+    transition-duration: 0.4s;
+}
+
+nav ul{
+    padding: 0px 0px 15px 0px;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin : 5px 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--bg-body);
+    border-top-color : var(--bg-body);
+    width: 100%;
+
+}
+
+nav li a.link-to{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color : var(--link-color);
+    padding: 10px 10px;
+}
+
+nav li.active{
+    background : var(--bg-body);
+}
+
+nav li.active:hover{
+    background : white;
+}
+
+nav li:hover{
+    background : var(--bg-body);
+}
+
+nav li a img.user-icon{
+    width: var(--svg-width);
+    height : var(--svg-height);
+    margin-right : 15px;
+}
+
+nav button{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    margin: 15px 10px 10px 10px;
+}
+
+nav button img{
+    width: var(--svg-width);
+    height : var(--svg-height);
+}
+
+nav li.deconnexion{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+/*CONTENT*/
+
+.content{
+    padding : 15px 10px 10px 0;
+    margin-left : 190px;
+    transition-duration: 0.4s;
+}
+
+.content-is-full{
+    margin-left: 60px;
+    transition-duration: 0.4s;
+}
+
+.title h1{
+    text-align: center;
+    padding: 25px 0 30px 0;
+}

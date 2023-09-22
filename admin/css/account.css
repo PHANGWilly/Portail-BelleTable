@@ -1,0 +1,19 @@
+.title{
+    text-align:center;
+    padding : 25px 0 30px;
+    font-weight : 600;
+    font-size : 35px;
+}
+
+.hello_msg{
+    text-align : center;
+}
+
+.align-center{
+    text-align : center;
+}
+
+.link__to{
+    text-decoration:underline;
+    color : black;
+}

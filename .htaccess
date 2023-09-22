@@ -1,0 +1,24 @@
+Options +FollowSymLinks
+
+RewriteEngine On
+
+RewriteRule ^produits/([a-zA-Z-]*)$    produit.php?urlp=$1 [QSA,L]
+
+Redirect ^produits/$  https://www.phangwilly.com/PortailBelleTable/produits.php
+
+Redirect produit.php  https://www.phangwilly.com/PortailBelleTable/produits.php
+
+Options +SymLinksIfOwnerMatch 
+
+RewriteEngine On 
+
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule https://www.phangwilly.com/PortailBelleTable/ [L]
+
+RewriteEngine On
+
+RewriteRule ^offre/([0-9-]*)$    offre.php?ido=$1 [QSA,L]
+
+ErrorDocument 404 https://www.phangwilly.com/PortailBelleTable/

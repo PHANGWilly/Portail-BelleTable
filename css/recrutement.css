@@ -1,0 +1,117 @@
+:root{
+    --h3-colored : #fc935f;
+}
+
+.h3{
+    text-transform: uppercase;
+}
+
+.h3-colored{
+    color : var(--h3-colored);
+}
+
+.nb-offre{
+    padding: 20px 0;
+}
+
+.le-titre-offre{
+    font-size : 20px;
+}
+
+.titre{
+    display: block;
+    font-weight: 600;
+}
+
+.btn-to-postuler a{
+    text-transform: uppercase;
+}
+
+.offre {
+    cursor: pointer;
+    padding: 20px 0;
+    margin: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    text-align: left;
+    font-size: 15px;
+    transition: 2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offre .le-titre-offre::before{
+    content : '\f0da';
+    font-family: var(--fa-font);
+    padding-right: 10px;
+}
+
+.offre.active .le-titre-offre::before{
+    content : '\f0d7';
+    font-family: var(--fa-font);
+    padding-right: 10px;
+}
+
+.offre.active{
+    border-bottom: none;
+}
+
+.offrepanel {
+    padding: 10px 20px;
+    display: none;
+    overflow: hidden;
+}
+
+.offrepanel div{
+    padding: 10px 0;
+}
+
+.btn-to-postuler a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    background: var(--main-color);
+    border-radius: 20px;
+    color: white;
+}
+
+.btn-to-postuler .enveloppe{
+    padding-right: 10px;
+}
+
+.candidature-spontanee{
+    display: block;
+    padding: 20px 0;
+}
+
+.candidature-spontanee a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    background: var(--main-color);
+    border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.description-candidature-spontanee {
+    padding: 15px 0 20px 0;
+}
+
+.candidature-spontanee .enveloppe{
+    padding-right: 10px;
+}
+
+@media screen and (max-width : 1024px){
+    .offre{
+        display: block;
+    }
+
+    .btn-to-postuler{
+        padding: 15px 0;
+    }
+}
+
